@@ -1,16 +1,55 @@
-# React + Vite
+# 🎯 Hangman Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A classic word-guessing game built with React and Vite.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18-blue) ![Vite](https://img.shields.io/badge/Vite-5-purple) ![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-green)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Demo
 
-## React Compiler
+👉 [Play the game](https://cidevalgames.github.io/hangman-game/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 How to play
 
-## Expanding the ESLint configuration
+- A random word is chosen at the start
+- Click on letters to guess the word
+- You have **6 lives** — each wrong letter costs one
+- Guess the word before running out of lives!
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech stack
+
+- **React 18** — UI and state management
+- **Vite** — build tool and dev server
+- **Context API** — global state without prop drilling
+- **CSS** — custom styling
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/cidevalgames/hangman-game.git
+cd hangman-game
+npm install
+npm run dev
+```
+
+## 📁 Project structure
+
+```
+src/
+├── context/
+│   ├── GameContext.js       # Context + useGameContext hook
+│   └── GameProvider.jsx     # State, logic, and effects
+├── components/
+│   ├── Keyboard.jsx         # QWERTY keyboard
+│   ├── WordDisplay.jsx      # Hidden word display
+│   └── GameStatus.jsx       # Win / lose screen
+├── App.jsx
+└── main.jsx
+```
+
+## 📚 Concepts learned
+
+- `useState`, `useEffect`, `useCallback`
+- Context API to avoid prop drilling
+- Conditional rendering
+- `.map()` for rendering lists
+- Deployment with `gh-pages`
