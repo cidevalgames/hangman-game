@@ -1,0 +1,17 @@
+.game-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 32px;
+}
+
+.game-status p {
+    font-size: 28px;
+}
+
+.game-status button {
+    font-size: 24px;
+    padding: 12px 72px;
+}

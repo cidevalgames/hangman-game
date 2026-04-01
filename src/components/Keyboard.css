@@ -1,0 +1,18 @@
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.keyboard div {
+    display: flex;
+    gap: 4px;
+}
+
+.keyboard button {
+    height: 48px;
+    width: 36px;
+    font-size: 20px;
+}

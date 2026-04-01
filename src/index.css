@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(243, 243, 182);
+}
+
+h1, h1 * {
+    font-family: "Playwrite IE", cursive !important;
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+button {
+    background-color: rgb(219, 181, 132);
+    border-color: rgb(181, 181, 155);
+    border-radius: 10px;
+}
